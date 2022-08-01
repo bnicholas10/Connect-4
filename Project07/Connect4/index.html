@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header class="headerfooter">
+        <p id="player1Name"></p>
+        <h1>Connect 4</h1>
+        <p id="player2Name"></p>
+    </header>
+    
+    <button id="resetButton">Reset</button>
+    
+    <div id="gameBoard"></div>
+
+    <div id = "inputArea">
+        <input  id = "pla1In" class="nameIn" type="text" placeholder="Player 1 Name"/>
+        <input  id = "pla2In" class="nameIn" type="text" placeholder="Player 2 Name"/>
+        <button id = "submitButton">Submit</button>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <footer class="headerfooter">
+        <h1 id="turnTracker">Enter player names</h1>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

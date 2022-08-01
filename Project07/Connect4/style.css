@@ -1,0 +1,226 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+body {
+ background-image: url(images/tabletop.jpg);
+ background-size: cover;
+ font-family: 'Edu VIC WA NT Beginner', cursive;
+
+}
+.headerfooter{
+ display: flex;
+ align-items: center;
+ width: 100%; height: 65px;
+ background-image: url(images/grass.jpg);
+ color: white;
+ padding-bottom: 5px;
+ font-size: 20px;
+ text-shadow: 3px 3px 5px black;
+}
+header{
+ justify-content: space-evenly;
+ box-shadow: inset 0px -3px 10px black;
+ position: fixed;
+ top: 0;
+}
+footer{
+ justify-content: center;
+ box-shadow: inset 0px 3px 10px black;
+ position: fixed;
+ bottom: 0;
+}
+
+#gameBoard{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+ justify-items: center;
+ background-color: rgb(0, 89, 255);
+ box-shadow: 0px 0px 6px 2px black;
+ border-radius: 7%;
+ height: 552px; width: 770px;
+ padding: 5px;
+ position: absolute;
+ left: 25%;
+ top: 13%;
+
+}
+.square{
+    border: 2px solid black;
+    background-color: rgba(245, 245, 245, 0.829);
+    height: 85px; width: 103px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 5px black;
+    margin-bottom: 5px;
+    text-align: center;
+    color: transparent;
+}
+
+#resetButton{
+ width: 180px; height: 80px;
+ border: 5px solid rgba(139, 69, 19, 0.75);
+ border-radius: 10%;
+ background-color: rgb(0, 0, 0, 0);
+ color: rgba(255, 255, 255, 0.79);
+ font-size: 40px;
+ font-family: 'Edu VIC WA NT Beginner', cursive;
+ letter-spacing: 4px;
+ transition: all 200ms ease-in;
+ cursor: pointer;
+ position: absolute;
+ top: 30%;
+ left: 7%;
+}
+
+#resetButton:hover{
+    letter-spacing: 7px;
+    font-size: 46px;
+    border: 6px solid rgb(180, 125, 85);
+    background-color: rgba(0, 0, 0, 0.351);
+    color: rgba(255, 255, 255);
+    border-radius: 0%;
+}
+
+
+#inputArea{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 155px; width: 295px;
+  margin-bottom: 145px;
+  /* background-color: aqua; */
+  position: absolute;
+  top: 25%;
+  right: 3%;
+}
+
+.nameIn{
+ text-align: center;
+ height: 45px; width: 175px;
+ margin-bottom: 10px;
+ margin-right: 15px;
+ background-color: rgb(0, 0, 0, 0);
+ border: none;
+ border-bottom: 3px solid rgb(139, 69, 19);
+ font-size: 15px;
+ font-family: 'Edu VIC WA NT Beginner', cursive;
+ color: white;
+ transition: all 300ms ease-in;
+}
+
+.nameIn::placeholder{
+  color: white;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+.nameIn:focus{
+  outline: none;
+  border-color: rgb(180, 125, 85);
+}
+.nameIn:hover{
+  cursor: pointer;
+}
+.nameIn:focus::placeholder{
+  color: transparent;
+}
+
+#submitButton{
+ width: 90px; height: 50px;
+ margin-bottom: 10px;
+ border: 3px solid rgba(139, 69, 19, 0.76);
+ border-radius: 10%;
+ background-color: rgb(0, 0, 0, 0);
+ color: rgb(255, 255, 255);
+ font-size: 17px;
+ font-family: 'Edu VIC WA NT Beginner', cursive;
+ letter-spacing: 2px;
+ transition: all 200ms ease-in;
+}
+
+#submitButton:hover{
+    letter-spacing: 4px;
+    font-size: 19px;
+    border: 4px solid rgb(180, 125, 85);
+    background-color: rgba(0, 0, 0, 0.351);
+    color: rgba(255, 255, 255);
+    border-radius: 0%;
+    cursor: pointer;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(139, 69, 19);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(139, 69, 19);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  .player-1{
+    background-color: red;
+  }
+  .player-2{
+    background-color: yellow;
+  }
